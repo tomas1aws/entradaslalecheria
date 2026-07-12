@@ -18,7 +18,7 @@ export function HeroSection() {
             Comprar entradas
           </a>
         </div>
-        <div className="flex min-h-80 animate-float items-center justify-center rounded-3xl bg-sky-950/30 p-6 shadow-2xl shadow-sky-950/40 sm:p-8">
+        <div className="flex min-h-80 animate-float items-center justify-center">
           <Image
             src="/images/logopng (2).png"
             alt="Logo de La Lechería"
