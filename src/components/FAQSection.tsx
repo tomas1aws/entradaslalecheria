@@ -1,0 +1,25 @@
+const faqs = [
+  ["¿Puedo comprar más de una entrada?", "Sí. Podés elegir entre 1 y 5 entradas usando el botón correspondiente al total que querés abonar."],
+  ["¿Tengo que enviar los nombres de todos los asistentes?", "Sí. Incluí los nombres completos de todas las personas que asistirán para facilitar la verificación."],
+  ["¿Cuándo queda confirmada la compra?", "La compra queda confirmada cuando el organizador recibe el comprobante y verifica el pago."],
+  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por WhatsApp o correo junto con los datos solicitados."],
+  ["¿Puedo enviar el comprobante desde otro teléfono?", "Sí. Asegurate de indicar el nombre de quien realizó el pago, la cantidad de entradas y un contacto válido."],
+] as const;
+
+export function FAQSection() {
+  return (
+    <section className="px-5 py-12 sm:px-8 lg:px-12" aria-labelledby="faq-titulo">
+      <div className="mx-auto max-w-4xl">
+        <h2 id="faq-titulo" className="text-3xl font-black text-white">Preguntas frecuentes</h2>
+        <div className="mt-6 space-y-4">
+          {faqs.map(([question, answer]) => (
+            <details key={question} className="group rounded-2xl border border-white/10 bg-white/[0.07] p-5">
+              <summary className="cursor-pointer list-none font-bold text-white focus:outline-none group-open:text-sky-200">{question}</summary>
+              <p className="mt-3 leading-7 text-slate-300">{answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

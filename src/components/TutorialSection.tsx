@@ -1,0 +1,43 @@
+import { PlaceholderImage } from "./PlaceholderImage";
+
+const steps = [
+  "Elegí la cantidad de entradas.",
+  "Realizá el pago mediante Mercado Pago.",
+  "Guardá o capturá el comprobante.",
+  "Enviá el comprobante por WhatsApp o correo.",
+  "Incluí los nombres completos de todas las personas que asistirán.",
+  "Indicá la cantidad de entradas abonadas.",
+  "Incluí un correo o teléfono de contacto.",
+  "Esperá la confirmación del organizador.",
+] as const;
+
+export function TutorialSection() {
+  return (
+    <section className="px-5 py-12 sm:px-8 lg:px-12" aria-labelledby="tutorial-titulo">
+      <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1fr_0.8fr]">
+        <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-6 sm:p-8">
+          <h2 id="tutorial-titulo" className="text-3xl font-black text-white">¿Cómo confirmar tu compra?</h2>
+          <ol className="mt-6 space-y-4">
+            {steps.map((step, index) => (
+              <li key={step} className="flex gap-4 text-slate-200">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-sky-300 font-black text-sky-950">{index + 1}</span>
+                <span>{step}</span>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-6 rounded-2xl border border-sky-200/30 bg-sky-300/10 p-4 font-bold text-sky-100">
+            La compra no se considera confirmada hasta que el comprobante haya sido enviado y el pago haya sido verificado.
+          </p>
+          <div className="mt-6 rounded-2xl bg-slate-950/70 p-5 font-mono text-sm leading-7 text-slate-200">
+            <p>Nombre de quien realizó el pago:</p>
+            <p>Cantidad de entradas:</p>
+            <p>Nombres completos de los asistentes:</p>
+            <p>Correo de contacto:</p>
+            <p>Teléfono de contacto:</p>
+          </div>
+        </div>
+        <PlaceholderImage label="Ejemplo de comprobante" className="min-h-96" />
+      </div>
+    </section>
+  );
+}
