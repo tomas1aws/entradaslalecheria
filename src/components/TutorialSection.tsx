@@ -22,14 +22,9 @@ export function TutorialSection() {
               </li>
             ))}
           </ol>
-          <p className="mt-6 rounded-2xl border border-sky-200/30 bg-sky-300/10 p-4 font-bold text-sky-100">
-            La compra no se considera confirmada hasta que el comprobante haya sido enviado y el pago haya sido verificado.
+          <p className="mt-6 rounded-2xl border border-sky-200/30 bg-sky-300/10 p-4 font-bold leading-relaxed text-sky-100 sm:p-5">
+            La compra no se considera confirmada hasta que el comprobante haya sido enviado y el pago haya sido verificado. También se validará el número de operación de Mercado Pago para evitar comprobantes duplicados o reutilizados.
           </p>
-          <div className="mt-6 rounded-2xl bg-slate-950/70 p-5 font-mono text-sm leading-7 text-slate-200">
-            <p>Nombre de quien realizó el pago:</p>
-            <p>Cantidad de entradas:</p>
-            <p>Nombres completos de los asistentes:</p>
-          </div>
         </div>
         <div className="flex min-h-96 items-center justify-center">
           <Image
