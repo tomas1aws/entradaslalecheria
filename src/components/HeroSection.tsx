@@ -1,5 +1,4 @@
 import { eventConfig } from "@/config/event";
-import { formatCurrency } from "@/config/helpers";
 import { PlaceholderImage } from "./PlaceholderImage";
 
 export function HeroSection() {
@@ -18,7 +17,6 @@ export function HeroSection() {
             <p><strong className="text-white">Fecha:</strong> {eventConfig.date}</p>
             <p><strong className="text-white">Horario:</strong> {eventConfig.time}</p>
             <p><strong className="text-white">Lugar:</strong> {eventConfig.location}</p>
-            <p><strong className="text-white">Entrada:</strong> {formatCurrency(eventConfig.ticketPrice)}</p>
           </div>
           <a href="#comprar" className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-sky-300 px-7 py-3 font-bold text-sky-950 shadow-lg shadow-sky-950/30 transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-4 focus:ring-sky-200/70">
             Comprar entradas
