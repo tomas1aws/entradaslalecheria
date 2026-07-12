@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; scroll-behavior: smooth; }
+body { margin: 0; background: #071426; color: white; font-family: Arial, Helvetica, sans-serif; }
+::selection { background: #7dd3fc; color: #082f49; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.animate-fade-in { animation: fade-in 700ms ease-out both; }
+.animate-float { animation: float 6s ease-in-out infinite; }
