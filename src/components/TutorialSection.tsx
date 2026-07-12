@@ -1,4 +1,4 @@
-import { PlaceholderImage } from "./PlaceholderImage";
+import Image from "next/image";
 
 const steps = [
   "Elegí la cantidad de entradas.",
@@ -31,7 +31,16 @@ export function TutorialSection() {
             <p>Nombres completos de los asistentes:</p>
           </div>
         </div>
-        <PlaceholderImage label="Ejemplo de comprobante" className="min-h-96" />
+        <div className="flex min-h-96 items-center justify-center">
+          <Image
+            src="/images/ejemplocomprobante.png"
+            alt="Ejemplo real de comprobante de pago"
+            width={1182}
+            height={1330}
+            className="h-auto w-full object-contain"
+            sizes="(min-width: 1024px) 38vw, 90vw"
+          />
+        </div>
       </div>
     </section>
   );
