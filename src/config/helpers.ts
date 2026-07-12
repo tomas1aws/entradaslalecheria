@@ -24,7 +24,6 @@ export function getPaymentHref(quantity: TicketQuantity): string {
 export function getWhatsappHref(): string {
   const message = `Hola, envío mi comprobante de pago para ${eventConfig.name}.
 
-Nombre de quien realizó el pago:
 Cantidad de entradas:
 Nombres completos de los asistentes:`;
 
@@ -39,7 +38,6 @@ export function getMailtoHref(): string {
   const subject = `Comprobante ${eventConfig.name}`;
   const body = `Hola, envío mi comprobante de pago para ${eventConfig.name}.
 
-Nombre de quien realizó el pago:
 Cantidad de entradas:
 Nombres completos de los asistentes:`;
 

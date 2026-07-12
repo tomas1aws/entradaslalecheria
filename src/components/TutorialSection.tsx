@@ -4,7 +4,7 @@ const steps = [
   "Elegí la cantidad de entradas.",
   "Realizá el pago mediante Mercado Pago.",
   "Guardá o capturá el comprobante.",
-  "Enviá el comprobante junto con el nombre de quien realizó el pago, la cantidad de entradas abonadas y los nombres completos de todas las personas que asistirán.",
+  "Enviá el comprobante junto con la cantidad de entradas abonadas y los nombres completos de todas las personas que asistirán.",
   "Esperá la confirmación del organizador.",
 ] as const;
 
