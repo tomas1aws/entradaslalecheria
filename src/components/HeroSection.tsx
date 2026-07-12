@@ -1,5 +1,6 @@
+import Image from "next/image";
+
 import { eventConfig } from "@/config/event";
-import { PlaceholderImage } from "./PlaceholderImage";
 
 export function HeroSection() {
   return (
@@ -13,16 +14,21 @@ export function HeroSection() {
           <h1 className="text-balance text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
             {eventConfig.name}
           </h1>
-          <div className="mt-6 grid gap-3 text-lg text-slate-200 sm:grid-cols-2">
-            <p><strong className="text-white">Fecha:</strong> {eventConfig.date}</p>
-            <p><strong className="text-white">Horario:</strong> {eventConfig.time}</p>
-            <p><strong className="text-white">Lugar:</strong> {eventConfig.location}</p>
-          </div>
           <a href="#comprar" className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-sky-300 px-7 py-3 font-bold text-sky-950 shadow-lg shadow-sky-950/30 transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-4 focus:ring-sky-200/70">
             Comprar entradas
           </a>
         </div>
-        <PlaceholderImage label="Imagen del evento próximamente" className="min-h-80 animate-float" />
+        <div className="flex min-h-80 animate-float items-center justify-center rounded-3xl bg-sky-950/30 p-6 shadow-2xl shadow-sky-950/40 sm:p-8">
+          <Image
+            src="/images/logopng (2).png"
+            alt="Logo de La Lechería"
+            width={520}
+            height={520}
+            priority
+            className="h-auto max-h-[26rem] w-full max-w-md object-contain"
+            sizes="(min-width: 1024px) 45vw, 90vw"
+          />
+        </div>
       </div>
     </section>
   );
