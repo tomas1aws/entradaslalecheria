@@ -26,8 +26,7 @@ export function getWhatsappHref(): string {
 
 Nombre de quien realizó el pago:
 Cantidad de entradas:
-Nombres completos de los asistentes:
-Correo de contacto:`;
+Nombres completos de los asistentes:`;
 
   if (isPlaceholder(eventConfig.whatsappNumber, "WHATSAPP_NUMBER")) {
     return "#whatsapp-pendiente";
@@ -42,9 +41,7 @@ export function getMailtoHref(): string {
 
 Nombre de quien realizó el pago:
 Cantidad de entradas:
-Nombres completos de los asistentes:
-Correo de contacto:
-Teléfono de contacto:`;
+Nombres completos de los asistentes:`;
 
   if (isPlaceholder(eventConfig.contactEmail, "CONTACT_EMAIL")) {
     return "#correo-pendiente";

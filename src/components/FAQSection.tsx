@@ -1,9 +1,9 @@
 const faqs = [
-  ["¿Puedo comprar más de una entrada?", "Sí. Podés elegir entre 1 y 5 entradas usando el botón correspondiente al total que querés abonar."],
+  ["¿Puedo comprar más de una entrada?", "Sí. Podés elegir entre 1 y 5 entradas con el selector de cantidad y pagar el total correspondiente."],
   ["¿Tengo que enviar los nombres de todos los asistentes?", "Sí. Incluí los nombres completos de todas las personas que asistirán para facilitar la verificación."],
   ["¿Cuándo queda confirmada la compra?", "La compra queda confirmada cuando el organizador recibe el comprobante y verifica el pago."],
-  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por WhatsApp o correo junto con los datos solicitados."],
-  ["¿Puedo enviar el comprobante desde otro teléfono?", "Sí. Asegurate de indicar el nombre de quien realizó el pago, la cantidad de entradas y un contacto válido."],
+  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por cualquiera de los canales disponibles junto con el nombre de quien pagó, la cantidad de entradas y los nombres completos de los asistentes."],
+  ["¿Puedo enviar el comprobante desde otro teléfono?", "Sí. Podés enviarlo por cualquiera de los canales disponibles; el medio utilizado ya permite identificar el contacto. Asegurate de indicar el nombre de quien realizó el pago, la cantidad de entradas y los nombres completos de los asistentes."],
 ] as const;
 
 export function FAQSection() {

@@ -4,10 +4,7 @@ const steps = [
   "Elegí la cantidad de entradas.",
   "Realizá el pago mediante Mercado Pago.",
   "Guardá o capturá el comprobante.",
-  "Enviá el comprobante por WhatsApp o correo.",
-  "Incluí los nombres completos de todas las personas que asistirán.",
-  "Indicá la cantidad de entradas abonadas.",
-  "Incluí un correo o teléfono de contacto.",
+  "Enviá el comprobante junto con el nombre de quien realizó el pago, la cantidad de entradas abonadas y los nombres completos de todas las personas que asistirán.",
   "Esperá la confirmación del organizador.",
 ] as const;
 
@@ -32,8 +29,6 @@ export function TutorialSection() {
             <p>Nombre de quien realizó el pago:</p>
             <p>Cantidad de entradas:</p>
             <p>Nombres completos de los asistentes:</p>
-            <p>Correo de contacto:</p>
-            <p>Teléfono de contacto:</p>
           </div>
         </div>
         <PlaceholderImage label="Ejemplo de comprobante" className="min-h-96" />
