@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const steps = [
-  "Elegí la cantidad de entradas.",
+  "Elegí la entrada general.",
   "Realizá el pago mediante Mercado Pago.",
   "Guardá o capturá el comprobante.",
-  "Enviá el comprobante junto con la cantidad de entradas abonadas y los nombres completos de todas las personas que asistirán.",
+  "Enviá el comprobante junto con el nombre completo de la persona que asistirá.",
   "Esperá la confirmación del organizador.",
 ] as const;
 

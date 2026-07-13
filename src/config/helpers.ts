@@ -1,4 +1,4 @@
-import { eventConfig, type TicketQuantity } from "./event";
+import { eventConfig } from "./event";
 
 export function formatCurrency(amount: number): string {
   return new Intl.NumberFormat("es-AR", {
@@ -8,24 +8,20 @@ export function formatCurrency(amount: number): string {
   }).format(amount);
 }
 
-export function getTicketTotal(quantity: TicketQuantity): number {
-  return eventConfig.ticketPrice * quantity;
-}
-
 export function isPlaceholder(value: string, prefix: string): boolean {
   return value.trim() === prefix || value.trim().startsWith(`${prefix}_`);
 }
 
-export function getPaymentHref(quantity: TicketQuantity): string {
-  const link = eventConfig.paymentLinks[quantity];
-  return isPlaceholder(link, "PAYMENT_LINK") ? `#pago-pendiente-${quantity}` : link;
+export function getPaymentHref(): string {
+  const link = eventConfig.paymentLinks[1];
+  return isPlaceholder(link, "PAYMENT_LINK") ? "#pago-pendiente-1" : link;
 }
 
 export function getWhatsappHref(): string {
   const message = `Hola, envío mi comprobante de pago para ${eventConfig.name}.
 
-Cantidad de entradas:
-Nombres completos de los asistentes:`;
+Entrada general:
+Nombre completo del asistente:`;
 
   if (isPlaceholder(eventConfig.whatsappNumber, "WHATSAPP_NUMBER")) {
     return "#whatsapp-pendiente";
@@ -38,8 +34,8 @@ export function getMailtoHref(): string {
   const subject = `Comprobante ${eventConfig.name}`;
   const body = `Hola, envío mi comprobante de pago para ${eventConfig.name}.
 
-Cantidad de entradas:
-Nombres completos de los asistentes:`;
+Entrada general:
+Nombre completo del asistente:`;
 
   if (isPlaceholder(eventConfig.contactEmail, "CONTACT_EMAIL")) {
     return "#correo-pendiente";

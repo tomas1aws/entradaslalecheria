@@ -52,7 +52,7 @@ Ahí se cambian nombre, fecha, horario, lugar, precio unitario, links de pago, W
 
 ## Cómo cambiar los links de Mercado Pago
 
-En `src/config/event.ts`, reemplazá cada placeholder por el link fijo real correspondiente al importe correcto:
+En `src/config/event.ts`, reemplazá el placeholder de `paymentLinks[1]` por el link fijo real de la entrada individual. Los demás links pueden quedar configurados para uso futuro, pero la landing actual solo utiliza `paymentLinks[1]`:
 
 ```ts
 paymentLinks: {
@@ -64,13 +64,9 @@ paymentLinks: {
 }
 ```
 
-Importes esperados:
+Importe esperado:
 
-- 1 entrada: $40.000 ARS
-- 2 entradas: $80.000 ARS
-- 3 entradas: $120.000 ARS
-- 4 entradas: $160.000 ARS
-- 5 entradas: $200.000 ARS
+- Entrada general: $40.000 ARS
 
 ## Cómo cambiar el WhatsApp
 
