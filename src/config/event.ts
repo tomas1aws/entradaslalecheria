@@ -15,7 +15,3 @@ export const eventConfig = {
   whatsappNumber: "WHATSAPP_NUMBER",
   contactEmail: "CONTACT_EMAIL",
 } as const;
-
-export type TicketQuantity = keyof typeof eventConfig.paymentLinks;
-
-export const ticketQuantities = [1, 2, 3, 4, 5] as const satisfies readonly TicketQuantity[];

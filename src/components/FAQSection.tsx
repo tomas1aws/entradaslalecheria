@@ -1,8 +1,7 @@
 const faqs = [
-  ["¿Puedo comprar más de una entrada?", "Sí. Podés elegir entre 1 y 5 entradas con el selector de cantidad y pagar el total correspondiente."],
-  ["¿Tengo que enviar los nombres de todos los asistentes?", "Sí. Incluí los nombres completos de todas las personas que asistirán para facilitar la verificación."],
+  ["¿Tengo que enviar el nombre del asistente?", "Sí. Incluí el nombre completo de la persona que asistirá para facilitar la verificación."],
   ["¿Cuándo queda confirmada la compra?", "La compra queda confirmada cuando el organizador recibe el comprobante y verifica el pago."],
-  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por cualquiera de los canales disponibles junto con la cantidad de entradas y los nombres completos de los asistentes."],
+  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por cualquiera de los canales disponibles junto con el nombre completo del asistente."],
 ] as const;
 
 export function FAQSection() {
