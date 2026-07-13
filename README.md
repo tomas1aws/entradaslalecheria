@@ -96,11 +96,11 @@ Cuando estén listas, colocá los archivos con estos nombres:
 
 ```txt
 public/images/evento-principal.jpg
-public/images/comprobante-ejemplo.jpg
+public/images/ejcomprobante2.png
 ```
 
 - `evento-principal.jpg`: flyer o imagen principal del evento.
-- `comprobante-ejemplo.jpg`: ejemplo visual de comprobante para la sección tutorial.
+- `ejcomprobante2.png`: ejemplo visual de comprobante para la sección tutorial.
 
 Actualmente se muestran los placeholders “Imagen del evento próximamente” y “Ejemplo de comprobante”.
 
@@ -116,7 +116,7 @@ Antes de publicar la landing final, reemplazar:
 - `WHATSAPP_NUMBER`
 - `CONTACT_EMAIL`
 - `public/images/evento-principal.jpg` cuando exista el flyer real
-- `public/images/comprobante-ejemplo.jpg` cuando exista el ejemplo real
+- `public/images/ejcomprobante2.png` cuando exista el ejemplo real
 
 ## Notas importantes
 
