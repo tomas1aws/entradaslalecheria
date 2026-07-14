@@ -23,23 +23,7 @@ export function getWhatsappHref(): string {
 Entrada general:
 Nombre completo del asistente:`;
 
-  if (isPlaceholder(eventConfig.whatsappNumber, "WHATSAPP_NUMBER")) {
-    return "#whatsapp-pendiente";
-  }
+  const sanitizedNumber = eventConfig.whatsappNumber.replace(/\D/g, "");
 
-  return `https://wa.me/${eventConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-}
-
-export function getMailtoHref(): string {
-  const subject = `Comprobante ${eventConfig.name}`;
-  const body = `Hola, envío mi comprobante de pago para ${eventConfig.name}.
-
-Entrada general:
-Nombre completo del asistente:`;
-
-  if (isPlaceholder(eventConfig.contactEmail, "CONTACT_EMAIL")) {
-    return "#correo-pendiente";
-  }
-
-  return `mailto:${eventConfig.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `https://wa.me/${sanitizedNumber}?text=${encodeURIComponent(message)}`;
 }
