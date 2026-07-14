@@ -1,7 +1,7 @@
 const faqs = [
   ["¿Tengo que enviar el nombre del asistente?", "Sí. Incluí el nombre completo de la persona que asistirá para facilitar la verificación."],
   ["¿Cuándo queda confirmada la compra?", "La compra queda confirmada cuando el organizador recibe el comprobante y verifica el pago."],
-  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por cualquiera de los canales disponibles junto con el nombre completo del asistente."],
+  ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por WhatsApp junto con el nombre completo del asistente."],
 ] as const;
 
 export function FAQSection() {

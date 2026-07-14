@@ -12,6 +12,5 @@ export const eventConfig = {
     4: "PAYMENT_LINK_4",
     5: "PAYMENT_LINK_5",
   },
-  whatsappNumber: "WHATSAPP_NUMBER",
-  contactEmail: "CONTACT_EMAIL",
+  whatsappNumber: "11-2222-3333",
 } as const;

@@ -48,7 +48,7 @@ Todos los datos modificables están centralizados en:
 src/config/event.ts
 ```
 
-Ahí se cambian nombre, fecha, horario, lugar, precio unitario, links de pago, WhatsApp y correo.
+Ahí se cambian nombre, fecha, horario, lugar, precio unitario, links de pago y WhatsApp.
 
 ## Cómo cambiar los links de Mercado Pago
 
@@ -73,20 +73,10 @@ Importe esperado:
 En `src/config/event.ts`, reemplazá:
 
 ```ts
-whatsappNumber: "WHATSAPP_NUMBER"
+whatsappNumber: "11-2222-3333"
 ```
 
-Usá el formato internacional sin `+`, espacios ni guiones. Ejemplo para Argentina: `549XXXXXXXXXX`.
-
-## Cómo cambiar el correo
-
-En `src/config/event.ts`, reemplazá:
-
-```ts
-contactEmail: "CONTACT_EMAIL"
-```
-
-por el correo real que recibirá los comprobantes.
+Ese es el único canal oficial para recibir comprobantes. El botón sanitiza el valor para abrir `https://wa.me/`, por lo que más adelante podés cambiarlo desde este único archivo.
 
 ## Imágenes futuras
 
@@ -113,13 +103,12 @@ Antes de publicar la landing final, reemplazar:
 - `PAYMENT_LINK_3`
 - `PAYMENT_LINK_4`
 - `PAYMENT_LINK_5`
-- `WHATSAPP_NUMBER`
-- `CONTACT_EMAIL`
+- `11-2222-3333` por el número definitivo de WhatsApp
 - `public/images/evento-principal.jpg` cuando exista el flyer real
 - `public/images/ejcomprobante2.png` cuando exista el ejemplo real
 
 ## Notas importantes
 
 - Los botones de pago abren en pestaña nueva con `target="_blank"` y `rel="noopener noreferrer"`.
-- Si un link o contacto sigue como placeholder, la interfaz muestra un aviso claro y no rompe la aplicación.
+- Si un link de pago sigue como placeholder, la interfaz muestra un aviso claro y no rompe la aplicación.
 - La compra queda sujeta a verificación manual del organizador.
