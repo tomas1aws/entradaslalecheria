@@ -3,8 +3,7 @@ import { EventDetails } from "@/components/EventDetails";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
-import { PurchaseOptions } from "@/components/PurchaseOptions";
-import { TutorialSection } from "@/components/TutorialSection";
+import { PurchaseFlowSection } from "@/components/PurchaseFlowSection";
 
 export default function Home() {
   return (
@@ -12,8 +11,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <EventDetails />
-        <PurchaseOptions />
-        <TutorialSection />
+        <PurchaseFlowSection />
         <ContactSection />
         <FAQSection />
       </main>
