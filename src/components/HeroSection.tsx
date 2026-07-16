@@ -20,9 +20,14 @@ export function HeroSection() {
             Adquirí tu entrada de forma virtual o presencial siguiendo las
             instrucciones que encontrarás más abajo.
           </p>
-          <a href="#comprar" className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-sky-300 px-7 py-3 font-bold text-sky-950 shadow-lg shadow-sky-950/30 transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-4 focus:ring-sky-200/70">
-            Comprar entradas
-          </a>
+          <div className="mx-auto mt-8 flex w-fit flex-col gap-4">
+            <a href="#comprar" className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-sky-300 px-7 py-3 font-bold text-sky-950 shadow-lg shadow-sky-950/30 transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-4 focus:ring-sky-200/70">
+              Comprar entradas
+            </a>
+            <a href="#enviar-comprobante" className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-emerald-300 px-7 py-3 font-bold text-emerald-950 shadow-lg shadow-sky-950/30 transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-4 focus:ring-emerald-200/70">
+              ¿Ya compraste?
+            </a>
+          </div>
         </div>
         <div className="flex min-h-80 animate-float items-center justify-center">
           <Image

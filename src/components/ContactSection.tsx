@@ -3,7 +3,7 @@ import { getWhatsappHref } from "@/config/helpers";
 
 export function ContactSection() {
   return (
-    <section className="px-5 py-12 sm:px-8 lg:px-12" aria-labelledby="contacto-titulo">
+    <section id="enviar-comprobante" className="px-5 py-12 sm:px-8 lg:px-12" aria-labelledby="contacto-titulo">
       <div className="mx-auto max-w-6xl rounded-3xl border border-sky-200/20 bg-sky-950/70 p-6 sm:p-8">
         <h2 id="contacto-titulo" className="text-3xl font-black text-white">Enviar comprobante</h2>
         <p className="mt-3 max-w-3xl text-slate-200">Después de pagar, enviá el comprobante con los datos solicitados para que el organizador pueda verificar tu compra.</p>
