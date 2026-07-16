@@ -25,11 +25,11 @@ export function PurchaseFlowSection() {
             <h2 id="comprar-titulo" className="mt-2 text-3xl font-black text-white">Elegí el método</h2>
           </div>
 
-          <div className="mt-7 grid flex-1 gap-6 lg:grid-cols-2">
-            <article aria-live="polite" className="flex h-full w-full flex-col rounded-3xl border border-white/10 bg-white/[0.07] p-5 text-center shadow-xl shadow-sky-950/20 sm:p-7">
-              <div className="space-y-5">
+          <article className="mt-7 flex-1 rounded-3xl border border-white/10 bg-white/[0.07] p-5 text-center shadow-xl shadow-sky-950/20 sm:p-7">
+            <section aria-labelledby="pago-virtual-titulo" aria-live="polite" className="mx-auto max-w-xl">
+              <div className="space-y-4">
                 <div>
-                  <h3 className="text-2xl font-black uppercase tracking-[0.08em] text-white">Pago virtual</h3>
+                  <h3 id="pago-virtual-titulo" className="text-xl font-black uppercase tracking-[0.08em] text-white sm:text-2xl">Pago virtual</h3>
                   <p className="mt-3 text-3xl font-black text-sky-200">Total: {total}</p>
                   <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300">
                     Realizá el pago mediante Mercado Pago utilizando el link correspondiente. Luego enviá el comprobante por WhatsApp para validar tu compra.
@@ -39,7 +39,7 @@ export function PurchaseFlowSection() {
                   Verificá que el monto del link coincida con la entrada seleccionada.
                 </p>
               </div>
-              <div className="mt-auto pt-6">
+              <div className="pt-4">
                 {isPending ? (
                   <p className="rounded-2xl bg-amber-300/15 p-3 text-sm font-semibold text-amber-100" role="status">
                     Link de pago pendiente de configuración.
@@ -56,29 +56,31 @@ export function PurchaseFlowSection() {
                   </a>
                 )}
               </div>
-            </article>
+            </section>
 
-            <article className="flex h-full w-full flex-col rounded-3xl border border-white/10 bg-white/[0.07] p-5 text-center shadow-xl shadow-sky-950/20 sm:p-7">
+            <hr className="my-8 border-0 border-t border-white/15 sm:my-10" />
+
+            <section aria-labelledby="pago-presencial-titulo" className="mx-auto max-w-xl">
               <div className="space-y-5">
                 <div>
-                  <h3 className="text-2xl font-black uppercase tracking-[0.08em] text-white">Pago presencial</h3>
+                  <h3 id="pago-presencial-titulo" className="text-xl font-black uppercase tracking-[0.08em] text-white sm:text-2xl">Pago presencial</h3>
                   <p className="mt-3 text-3xl font-black text-sky-200">Total: {total}</p>
                   <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300">
                     Podés adquirir tu entrada personalmente en el Quincho de Tenis antes del evento.
                   </p>
                 </div>
-                <p className="rounded-2xl border border-sky-200/30 bg-sky-300/10 p-4 text-sm font-semibold text-sky-100">
-                  Punto de venta físico:<br />
-                  Quincho de Tenis.
-                </p>
+                <div className="text-sm text-sky-100">
+                  <p className="font-semibold">Punto de venta físico</p>
+                  <p className="mt-1 text-lg font-black text-white">Quincho de Tenis</p>
+                </div>
               </div>
-              <div className="mt-auto pt-6">
+              <div className="pt-6">
                 <div className="flex min-h-12 w-full items-center justify-center rounded-2xl bg-white/10 px-5 py-3 text-center font-bold text-slate-200" aria-disabled="true">
                   Comprar en el Quincho de Tenis
                 </div>
               </div>
-            </article>
-          </div>
+            </section>
+          </article>
         </div>
 
         <article className="flex h-full flex-col box-border rounded-3xl border border-white/10 bg-white/[0.07] p-6 sm:p-8" aria-labelledby="tutorial-titulo">
