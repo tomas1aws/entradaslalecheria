@@ -4,7 +4,7 @@ export const eventConfig = {
   time: "22:30",
   location: "Club San Fernando",
   physicalTicketLocation: "Quincho de Tenis",
-  ticketPrice: 40000,
+  ticketPrice: 35000,
   currency: "ARS",
   paymentLinks: {
     1: "PAYMENT_LINK_1",

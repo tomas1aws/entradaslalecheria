@@ -66,7 +66,7 @@ paymentLinks: {
 
 Importe esperado:
 
-- Entrada general: $40.000 ARS
+- Entrada general: $35.000 ARS
 
 ## Cómo cambiar el WhatsApp
 
@@ -86,11 +86,11 @@ Cuando estén listas, colocá los archivos con estos nombres:
 
 ```txt
 public/images/evento-principal.jpg
-public/images/ejcomprobante2.png
+public/images/comprobante35k.png
 ```
 
 - `evento-principal.jpg`: flyer o imagen principal del evento.
-- `ejcomprobante2.png`: ejemplo visual de comprobante para la sección tutorial.
+- `comprobante35k.png`: ejemplo visual de comprobante para la sección tutorial.
 
 Actualmente se muestran los placeholders “Imagen del evento próximamente” y “Ejemplo de comprobante”.
 
@@ -105,7 +105,7 @@ Antes de publicar la landing final, reemplazar:
 - `PAYMENT_LINK_5`
 - `11-2222-3333` por el número definitivo de WhatsApp
 - `public/images/evento-principal.jpg` cuando exista el flyer real
-- `public/images/ejcomprobante2.png` cuando exista el ejemplo real
+- `public/images/comprobante35k.png` cuando exista el ejemplo real
 
 ## Notas importantes
 
