@@ -4,10 +4,10 @@ import { eventConfig } from "@/config/event";
 import { formatCurrency, getPaymentHref } from "@/config/helpers";
 
 const steps = [
-  "Elegí la entrada general.",
-  "Realizá el pago mediante Mercado Pago.",
+  "Copiá los datos para la transferencia.",
+  "Realizá la transferencia con el monto correspondiente a la cantidad de entradas que vas a comprar (máximo 2).",
   "Guardá o capturá el comprobante.",
-  "Enviá el comprobante junto con el nombre completo de la persona que asistirá.",
+  "Enviá el comprobante junto con el/los nombres completos y DNI de las personas que asistirán.",
   "Esperá la confirmación del organizador.",
 ] as const;
 
@@ -94,7 +94,7 @@ export function PurchaseFlowSection() {
             ))}
           </ol>
           <p className="mt-6 rounded-2xl border border-sky-200/30 bg-sky-300/10 p-4 font-bold leading-relaxed text-sky-100 sm:p-5">
-            La compra no se considera confirmada hasta que el comprobante haya sido enviado y el pago haya sido verificado. También se validará el número de operación de Mercado Pago para evitar comprobantes duplicados o reutilizados.
+            La compra no se considera confirmada hasta que el comprobante haya sido enviado. Es de suma importancia declarar el nombre y DNI del asistente para confeccionar el listado y realizar la posterior entrega de la entrada física. También se validará el número de operación de Mercado Pago para evitar comprobantes duplicados o reutilizados.
           </p>
         </article>
 
