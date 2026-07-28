@@ -28,7 +28,7 @@ export function TutorialSection() {
         </div>
         <div className="flex min-h-96 items-center justify-center">
           <Image
-            src="/images/ejcomprobante2.png"
+            src="/images/comprobante35k.png"
             alt="Ejemplo real de comprobante de pago"
             width={1182}
             height={1330}
