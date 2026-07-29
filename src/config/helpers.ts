@@ -20,8 +20,8 @@ export function getPaymentHref(): string {
 export function getWhatsappHref(): string {
   const message = `Hola, envío mi comprobante de pago para ${eventConfig.name}.
 
-Entrada general:
-Nombre completo del asistente:`;
+Cantidad:
+Nombre/s completo del asistente y DNI:`;
 
   return `https://wa.me/${eventConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
