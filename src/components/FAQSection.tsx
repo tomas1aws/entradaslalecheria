@@ -2,6 +2,11 @@ const faqs = [
   ["¿Tengo que enviar el nombre del asistente?", "Sí. Incluí el nombre completo de la persona que asistirá para facilitar la verificación."],
   ["¿Cuándo queda confirmada la compra?", "La compra queda confirmada cuando el organizador recibe el comprobante y verifica el pago."],
   ["¿Qué hago si pagué pero olvidé enviar el comprobante?", "Envialo cuanto antes por WhatsApp junto con el nombre completo del asistente."],
+  ["¿Puedo comprar más de una entrada?", "Sí. Podés adquirir hasta 2 entradas en una misma compra. Al enviar el comprobante, indicá el nombre completo y DNI de cada asistente."],
+  ["¿Es necesario ser socio del Club para asistir?", "¡No es necesario! El reencuentro está pensado para que podamos volver a compartir y revivir entre todos esas noches que nos dejaron tantos recuerdos."],
+  ["¿La entrada es personal?", "Sí. Cada entrada será emitida con el nombre y DNI del asistente informado al momento de confirmar la compra."],
+  ["¿Cómo retiro la entrada física?", "Podés retirar tu entrada cualquier día en el Quincho de Tenis."],
+  ["¿Se cancela por mal tiempo?", "No. El evento se realizará normalmente aunque las condiciones climáticas no sean favorables."],
 ] as const;
 
 export function FAQSection() {
