@@ -22,7 +22,7 @@ export function PurchaseFlowSection() {
         <div className="flex h-full flex-col lg:col-span-2">
           <div className="text-center">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-sky-200">Compra</p>
-            <h2 id="comprar-titulo" className="mt-2 text-3xl font-black text-white">Elegí el método - Valor de Preventa 1</h2>
+            <h2 id="comprar-titulo" className="mt-2 text-3xl font-black text-white">Elegí el método - Valor de Preventa 1 (Incluye una Consumición)</h2>
           </div>
 
           <article className="mt-7 flex-1 rounded-3xl border border-white/10 bg-white/[0.07] p-5 text-center shadow-xl shadow-sky-950/20 sm:p-7">
@@ -66,7 +66,7 @@ export function PurchaseFlowSection() {
                   <h3 id="pago-presencial-titulo" className="text-xl font-black uppercase tracking-[0.08em] text-white sm:text-2xl">Pago presencial</h3>
                   <p className="mt-3 text-3xl font-black text-sky-200">Total: {total}</p>
                   <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300">
-                    Podés adquirir tu entrada personalmente en el Quincho de Tenis antes del evento.
+                    Podés adquirir tu entrada presencialmente en el Quincho de Tenis.
                   </p>
                 </div>
                 <div className="text-sm text-sky-100">
