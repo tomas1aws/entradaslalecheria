@@ -12,7 +12,7 @@ export function ContactSection() {
         </div>
         <div className="mt-5 rounded-2xl bg-emerald-300/10 p-4 text-center text-sm font-semibold text-emerald-100 sm:text-base">
           <p>Enviá el comprobante únicamente por WhatsApp al número:</p>
-          <p className="mt-1 text-lg font-black text-white">{eventConfig.whatsappNumber}</p>
+          <p className="mt-1 text-lg font-black text-white">{eventConfig.whatsappDisplayNumber}</p>
         </div>
       </div>
     </section>

@@ -23,7 +23,5 @@ export function getWhatsappHref(): string {
 Entrada general:
 Nombre completo del asistente:`;
 
-  const sanitizedNumber = eventConfig.whatsappNumber.replace(/\D/g, "");
-
-  return `https://wa.me/${sanitizedNumber}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${eventConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
