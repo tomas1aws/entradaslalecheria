@@ -9,7 +9,7 @@ export function Footer() {
           <p>{eventConfig.date} · {eventConfig.location}</p>
         </div>
         <div className="text-sm sm:text-right">
-          <p>Canal oficial: WhatsApp {eventConfig.whatsappNumber}.</p>
+          <p>Canal oficial: WhatsApp {eventConfig.whatsappDisplayNumber}.</p>
           <p>Compra sujeta a verificación del organizador.</p>
         </div>
       </div>

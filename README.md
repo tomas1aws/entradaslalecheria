@@ -70,13 +70,14 @@ Importe esperado:
 
 ## Cómo cambiar el WhatsApp
 
-En `src/config/event.ts`, reemplazá:
+En `src/config/event.ts`, actualizá las dos propiedades centralizadas:
 
 ```ts
-whatsappNumber: "11-2222-3333"
+whatsappDisplayNumber // Formato visible en la página
+whatsappNumber // Formato internacional, solo dígitos, para wa.me
 ```
 
-Ese es el único canal oficial para recibir comprobantes. El botón sanitiza el valor para abrir `https://wa.me/`, por lo que más adelante podés cambiarlo desde este único archivo.
+Ese es el único canal oficial para recibir comprobantes. Los textos visibles usan `whatsappDisplayNumber` y los botones abren `https://wa.me/` con `whatsappNumber`, por lo que ambos formatos se administran desde este único archivo.
 
 ## Imágenes futuras
 
@@ -103,7 +104,6 @@ Antes de publicar la landing final, reemplazar:
 - `PAYMENT_LINK_3`
 - `PAYMENT_LINK_4`
 - `PAYMENT_LINK_5`
-- `11-2222-3333` por el número definitivo de WhatsApp
 - `public/images/evento-principal.jpg` cuando exista el flyer real
 - `public/images/comprobante35k.png` cuando exista el ejemplo real
 
