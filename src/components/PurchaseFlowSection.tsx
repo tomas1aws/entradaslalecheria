@@ -32,11 +32,11 @@ export function PurchaseFlowSection() {
                   <h3 id="pago-virtual-titulo" className="text-xl font-black uppercase tracking-[0.08em] text-white sm:text-2xl">Pago virtual</h3>
                   <p className="mt-3 text-3xl font-black text-sky-200">Total: {total}</p>
                   <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300">
-                    Realizá el pago mediante Mercado Pago utilizando el link correspondiente. Luego enviá el comprobante por WhatsApp para validar tu compra.
+                    Realizá el pago utilizando los siguientes datos de transferencia. Luego enviá el comprobante por WhatsApp para validar tu compra.
                   </p>
                 </div>
                 <p className="rounded-2xl border border-amber-200/30 bg-amber-300/10 p-4 text-sm font-semibold text-amber-100">
-                  Verificá que el monto del link coincida con la entrada seleccionada.
+                  Por favor, verificá que el monto del link coincida con la entrada seleccionada. 1 x 35.000$ | 2 x 70.000$
                 </p>
               </div>
               <div className="pt-4">
