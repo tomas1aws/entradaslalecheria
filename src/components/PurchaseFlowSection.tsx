@@ -36,7 +36,7 @@ export function PurchaseFlowSection() {
                   </p>
                 </div>
                 <p className="rounded-2xl border border-amber-200/30 bg-amber-300/10 p-4 text-sm font-semibold text-amber-100">
-                  Por favor, verificá que el monto del link coincida con la entrada seleccionada.    1 x 35.000$ | 2 x 70.000$
+                  Por favor, verificá que el monto de transferencia coincida con la cantidad de entradas seleccionadas.    1 x 35.000$ | 2 x 70.000$
                 </p>
               </div>
               <div className="pt-4">
