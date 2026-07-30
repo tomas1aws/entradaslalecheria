@@ -30,7 +30,8 @@ export function PurchaseFlowSection() {
               <div className="space-y-4">
                 <div>
                   <h3 id="pago-virtual-titulo" className="text-xl font-black uppercase tracking-[0.08em] text-white sm:text-2xl">Pago virtual</h3>
-                  <p className="mt-3 text-3xl font-black text-sky-200">Total: {total} (1 Consumición)</p>
+                  <p className="mt-3 text-3xl font-black text-sky-200">Total: {total}</p>
+                  <p className="mt-3 text-3xl font-black text-sky-200">(Incluye una Consumición)</p>
                   <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300">
                     Realizá el pago utilizando los siguientes datos de transferencia. Luego enviá el comprobante por WhatsApp para validar tu compra.
                   </p>
@@ -65,6 +66,7 @@ export function PurchaseFlowSection() {
                 <div>
                   <h3 id="pago-presencial-titulo" className="text-xl font-black uppercase tracking-[0.08em] text-white sm:text-2xl">Pago presencial</h3>
                   <p className="mt-3 text-3xl font-black text-sky-200">Total: {total}</p>
+                  <p className="mt-3 text-3xl font-black text-sky-200">(Incluye una Consumición)</p>
                   <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300">
                     Podés adquirir tu entrada presencialmente en el Quincho de Tenis.
                   </p>
