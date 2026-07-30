@@ -28,7 +28,7 @@ export function TransferDetails() {
   }
 
   return (
-    <div className="space-y-3 rounded-2xl bg-sky-200 p-3 text-left text-sky-950">
+    <div className="space-y-3 rounded-2xl border border-sky-200/30 bg-sky-300/10 p-3 text-left text-sky-100">
       {transferData.map(({ label, value }) => {
         const wasCopied = copied === label;
 
