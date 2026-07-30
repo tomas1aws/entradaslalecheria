@@ -10,7 +10,7 @@ export function HeroSection() {
             Entradas disponibles · Compra sujeta a verificación
           </p>
           <h2 className="mx-auto mt-3 max-w-2xl text-balance text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl">
-            30 años después, volvemos a encontrarnos.
+            35 años después, volvemos a encontrarnos.
           </h2>
           <p className="mx-auto mt-6 max-w-[700px] text-pretty text-base leading-7 text-slate-200 sm:text-lg sm:leading-8">
             Hay momentos que merecen volver a vivirse. La Lechería regresa para
