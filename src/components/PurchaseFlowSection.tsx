@@ -42,8 +42,9 @@ export function PurchaseFlowSection() {
               </div>
               <div className="pt-4">
                 {isPending ? (
-                  <p className="rounded-2xl bg-amber-300/15 p-3 text-sm font-semibold text-amber-100" role="status">
-                    Link de pago pendiente de configuración.
+                  <p className="rounded-2xl bg-amber-300/15 p-3 text-xl font-semibold text-amber-100" role="status">
+                    CBU: 0070181120000001410279
+                    ALIAS: POESIA.FAROL.BOLA
                   </p>
                 ) : (
                   <a
