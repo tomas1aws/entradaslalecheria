@@ -25,7 +25,7 @@ export function HeroSection() {
               Comprar entradas
             </a>
             <a href="#enviar-comprobante" className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-emerald-300 px-7 py-3 font-bold text-emerald-950 shadow-lg shadow-sky-950/30 transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-4 focus:ring-emerald-200/70">
-              ¿Ya compraste?
+              ¿Ya compraste? Enviar Comprobante
             </a>
           </div>
         </div>
