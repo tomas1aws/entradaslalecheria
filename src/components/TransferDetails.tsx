@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 
 const transferData = [
-  { label: "CBU", value: "0070181120000001410279" },
-  { label: "ALIAS", value: "POESIA.FAROL.BOLA" },
+  { label: "CBU", value: "0000003100056769953765" },
+  { label: "ALIAS", value: "rana1992.mp" },
 ] as const;
 
 type TransferLabel = (typeof transferData)[number]["label"];
