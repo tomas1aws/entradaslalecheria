@@ -8,10 +8,7 @@ export function Footer() {
           <p className="font-black text-white">{eventConfig.name}</p>
           <p>{eventConfig.date} · {eventConfig.location}</p>
         </div>
-        <div className="text-sm sm:text-right">
-          <p>Canal oficial: WhatsApp {eventConfig.whatsappDisplayNumber}.</p>
-          <p>Compra sujeta a verificación del organizador.</p>
-        </div>
+        <p className="text-sm sm:text-right">30 años después, volvemos a encontrarnos.</p>
       </div>
     </footer>
   );

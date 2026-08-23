@@ -1,114 +1,36 @@
-# La Lechería | Entradas
+# La Lechería — landing del evento
 
-Landing estática para vender entradas del evento **La Lechería** mediante links fijos de pago de Mercado Pago. No incluye backend, base de datos, webhooks, login ni confirmación automática: la compra se verifica manualmente luego de recibir el comprobante.
+Landing informativa de **La Lechería**. La página comunica que las entradas están agotadas y conserva la información útil para quienes asistirán al reencuentro.
 
-## Stack
-
-- Next.js con App Router
-- TypeScript estricto
-- Tailwind CSS
-- ESLint
-- Sitio estático listo para Vercel
-
-## Instalación
+## Desarrollo local
 
 ```bash
 npm install
-```
-
-## Ejecución local
-
-```bash
 npm run dev
 ```
 
-Abrí `http://localhost:3000` en el navegador.
+Abrí [http://localhost:3000](http://localhost:3000) en el navegador.
 
-## Checks de calidad
+## Validaciones
 
 ```bash
 npm run lint
 npm run build
 ```
 
-## Deploy en Vercel
+## Configuración del evento
 
-1. Subí este repositorio a GitHub, GitLab o Bitbucket.
-2. En Vercel, elegí **Add New Project**.
-3. Importá el repositorio.
-4. Vercel detecta Next.js automáticamente.
-5. No hace falta configurar variables de entorno.
-6. Ejecutá el deploy.
+Los datos compartidos por la landing se encuentran en `src/config/event.ts`:
 
-## Dónde modificar los datos del evento
+- nombre;
+- fecha;
+- hora;
+- lugar.
 
-Todos los datos modificables están centralizados en:
+## Estructura principal
 
-```txt
-src/config/event.ts
-```
-
-Ahí se cambian nombre, fecha, horario, lugar, precio unitario, links de pago y WhatsApp.
-
-## Cómo cambiar los links de Mercado Pago
-
-En `src/config/event.ts`, reemplazá el placeholder de `paymentLinks[1]` por el link fijo real de la entrada individual. Los demás links pueden quedar configurados para uso futuro, pero la landing actual solo utiliza `paymentLinks[1]`:
-
-```ts
-paymentLinks: {
-  1: "PAYMENT_LINK_1",
-  2: "PAYMENT_LINK_2",
-  3: "PAYMENT_LINK_3",
-  4: "PAYMENT_LINK_4",
-  5: "PAYMENT_LINK_5",
-}
-```
-
-Importe esperado:
-
-- Entrada general: $35.000 ARS
-
-## Cómo cambiar el WhatsApp
-
-En `src/config/event.ts`, actualizá las dos propiedades centralizadas:
-
-```ts
-whatsappDisplayNumber // Formato visible en la página
-whatsappNumber // Formato internacional, solo dígitos, para wa.me
-```
-
-Ese es el único canal oficial para recibir comprobantes. Los textos visibles usan `whatsappDisplayNumber` y los botones abren `https://wa.me/` con `whatsappNumber`, por lo que ambos formatos se administran desde este único archivo.
-
-## Imágenes futuras
-
-La landing funciona con placeholders visuales aunque las imágenes todavía no existan.
-
-Cuando estén listas, colocá los archivos con estos nombres:
-
-```txt
-public/images/evento-principal.jpg
-public/images/comprobante35k.png
-```
-
-- `evento-principal.jpg`: flyer o imagen principal del evento.
-- `comprobante35k.png`: ejemplo visual de comprobante para la sección tutorial.
-
-Actualmente se muestran los placeholders “Imagen del evento próximamente” y “Ejemplo de comprobante”.
-
-## Placeholders pendientes
-
-Antes de publicar la landing final, reemplazar:
-
-- `PAYMENT_LINK_1`
-- `PAYMENT_LINK_2`
-- `PAYMENT_LINK_3`
-- `PAYMENT_LINK_4`
-- `PAYMENT_LINK_5`
-- `public/images/evento-principal.jpg` cuando exista el flyer real
-- `public/images/comprobante35k.png` cuando exista el ejemplo real
-
-## Notas importantes
-
-- Los botones de pago abren en pestaña nueva con `target="_blank"` y `rel="noopener noreferrer"`.
-- Si un link de pago sigue como placeholder, la interfaz muestra un aviso claro y no rompe la aplicación.
-- La compra queda sujeta a verificación manual del organizador.
+- `src/components/HeroSection.tsx`: presentación y logo del evento.
+- `src/components/SoldOutSection.tsx`: mensaje destacado de entradas agotadas.
+- `src/components/EventDetails.tsx`: fecha, hora y lugar.
+- `src/components/FAQSection.tsx`: preguntas frecuentes vigentes.
+- `public/images/logopng (2).png`: logo de La Lechería.
