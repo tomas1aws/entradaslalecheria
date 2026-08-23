@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "La Lechería | Entradas",
-  description: "Entradas para La Lechería, 29 de agosto en Club San Fernando.",
+  title: "La Lechería | Entradas agotadas",
+  description: "La Lechería vuelve el 29 de agosto en Club San Fernando. Entradas agotadas.",
   openGraph: {
-    title: "La Lechería | Entradas",
-    description: "Entradas para La Lechería, 29 de agosto en Club San Fernando.",
+    title: "La Lechería | Entradas agotadas",
+    description: "La Lechería vuelve el 29 de agosto en Club San Fernando. Entradas agotadas.",
     type: "website",
   },
   icons: { icon: "/favicon.svg" },
